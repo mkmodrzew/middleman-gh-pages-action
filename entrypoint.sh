@@ -4,7 +4,7 @@ set -e
 
 echo 'Installing bundles...'
 cd ${INPUT_SITE_LOCATION}
-gem install bundler
+gem install bundler:1.16.1
 bundle install
 bundle list | grep "middleman ("
 
